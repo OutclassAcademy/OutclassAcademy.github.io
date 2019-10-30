@@ -1,321 +1,637 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="google-site-verification" content="Rf7uH4bA5vwYSuQLOlhJE0s7LqP9UTAlnaZ-3NdqF6E" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="Outclass Academy">
-    <meta name="title" content="Outclass Academy">    
-
-    <title>Outclass Academy</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    
-    <script src="https://form.jotform.me/static/feedback2.js" type="text/javascript">
-      new JotformFeedback({
-        formId: "92746372773468",
-        buttonText: "Register",
-        base: "https://form.jotform.me/",
-        background: "#F59202",
-        fontColor: "#FFFFFF",
-        buttonSide: "left",
-        buttonAlign: "center",
-        type: 1,
-        width: 7000,
-        height: 5000,
-        isCardForm: false
-      });
-    </script>
-    <!-- Custom styles for this template -->
-    <link href="css/carousel.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
-  </head>
-
-  <body>
-
-    <div class="masthead">
-      <div class="container">
-        <div class="logo col-xs-6">
-          <a href="/"><img src="images/OutclssAcademyLogo.png" /></a>
-        </div>
-        <div class="powered col-xs-6">
-          <a href="/"><img src="images/outclassAcademyJotFormQRCode_small.png" /></a>
-        </div>
+<!DOCTYPE HTML>
+<html lang="zxx">
+   <head>
+      <title>OutclassAcademy</title>
+      <!-- Meta tag Keywords -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="UTF-8" />
+      <meta name="google-site-verification" content="Rf7uH4bA5vwYSuQLOlhJE0s7LqP9UTAlnaZ-3NdqF6E" />
+      <meta name="keywords" content="Outclass Academy, Humza Ahmad, Avanish Behany" />
+      <script>
+         addEventListener("load", function () {
+         setTimeout(hideURLbar, 0);
+         }, false);
+         
+         function hideURLbar() {
+         window.scrollTo(0, 1);
+         }
+      </script>
+      <link rel="shortcut icon" href="images/LOGO2.png">
+      <!-- //Meta tag Keywords -->
+      <!-- Custom-Files -->
+      <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+      <!-- Bootstrap-CSS -->
+      <link href="css/style.css" rel='stylesheet' type='text/css' />
+      <!-- Style-CSS -->
+      <link href="css/font-awesome.min.css" rel="stylesheet">
+      <!-- Font-Awesome-Icons-CSS -->
+      <!-- //Custom-Files -->
+      <!-- Web-Fonts -->
+      <link href="//fonts.googleapis.com/css?family=Lora:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext,vietnamese"
+         rel="stylesheet">
+      <link href="//fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&amp;subset=latin-ext" rel="stylesheet">
+      <!-- //Web-Fonts -->      
+   </head>
+   <body>
+      <script>
+         window.fbAsyncInit = function() {
+                           FB.init({
+                             appId      : 506938809859025,
+                             cookie     : true,
+                             xfbml      : true,
+                             version    : 'v5.0'
+                           });
+                             
+                           FB.AppEvents.logPageView();   
+                             
+                         };
+         
+         window.fbAsyncInit = function() {
+             FB.init({
+                 appId      : 506938809859025,
+                             cookie     : true,
+                             xfbml      : true,
+                             version    : 'v5.0'      
+             });
+             FB.getLoginStatus(function(response) {
+             if (response.status === 'connected') {
+                 // connected
+             } else if (response.status === 'not_authorized') {
+                 // not_authorized
+               login();
+             } else {
+                 // not_logged_in
+               login();
+             }
+             });
+         
+             // Additional init code here
+         
+           };
+         
+           function login() {
+             FB.login(function(response) {
+                 if (response.authResponse) {
+                     // connected
+                   testAPI();
+                 } else {
+                     // cancelled
+                 }
+             });
+             }
+         
+           function testAPI() {
+         
+             console.log('Welcome!  Fetching your information.... ');
+             FB.api('/me', function(response) {
+         
+                 console.log('Good to see you, ' + response.name + '.');
+             });
+           }
+        //    (function(d, s, id){
+        //    var js, fjs = d.getElementsByTagName(s)[0];
+        //    if (d.getElementById(id)) {return;}
+        //    js = d.createElement(s); js.id = id;
+        //    js.src = "https://connect.facebook.net/en_US/sdk.js";
+        //    fjs.parentNode.insertBefore(js, fjs);
+        //    }(document, 'script', 'facebook-jssdk'));
+                       
+      </script>
+      <!-- header -->
+      <header>
+         <div class="container">
+            <div class="header d-lg-flex justify-content-between align-items-center py-2 px-sm-2 px-1">
+               <!-- logo -->        
+               <div id="logo">                                      
+                    <h1><img src="images/LOGO_title5.png" alt="OutclassAcademy"/><span class="text-bl my-4">OutclassAcademy</span></h1>
+               </div>
+               <!-- //logo -->
+               <!-- nav -->
+               <div class="nav_w3ls ml-lg-5">
+                  <nav>
+                     <label for="drop" class="toggle">Menu</label>
+                     <input type="checkbox" id="drop" />
+                     <ul class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <!-- <li><a href="https://form.jotform.me/92746372773468/">Join Now</a></li> -->
+                        <li>
+                           <!-- First Tier Drop Down -->
+                           <label for="drop-2" class="toggle toogle-2">Pages <span class="fa fa-angle-down"
+                              aria-hidden="true"></span>
+                           </label>
+                           <a href="#">Pages <span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                           <input type="checkbox" id="drop-2" />
+                           <ul>
+                              <!-- <li><a href="#events" class="drop-text">Events</a></li> -->
+                              <li><a href="#what" class="drop-text">What We Do?</a></li>
+                              <li><a href="#courses" class="drop-text">Popular Courses</a></li>
+                              <li><a href="#stats" class="drop-text">Statistics</a></li>
+                              <li><a href="#gallery" class="drop-text">Gallery</a></li>
+                           </ul>
+                        </li>
+                        <!-- <li><a href="#contact">Contact</a></li> -->
+                        <!-- <li><a href="https://form.jotform.me/92746372773468/">Login</a></li> -->
+                        <li><a href="https://form.jotform.me/92746372773468/">Register</a></li>
+                     </ul>
+                  </nav>
+               </div>
+               <!-- //nav -->
+            </div>
+         </div>
+      </header>
+      <!-- //header -->
+      <!-- banner -->
+      <div class="main-w3pvt mian-content-wthree text-center" id="home">
+         <div class="container">
+            <div class="style-banner mx-auto">
+               <h3 class="text-wh font-weight-bold">Welcome to <span>OutclassAcademy</span> <br>Coding For Kids</h3>
+               <!-- <p class="mt-3 text-li" id="join">Join now</p> -->
+               <!-- form -->                
+               <div class="home-form-w3ls mt-5">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/yALfDV8eJBo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <br/>
+                  <a href="https://form.jotform.me/92746372773468/">                
+                  <button type="submit" class="btn_apt btn">Join Us</button></a> 
+                  <br/>
+                  <br/>
+               </div>
+               <!-- <form action="#" method="post">
+                  <div class="row">
+                      <div class="col-lg-6">
+                          <div class="form-group">
+                              <input class="form-control" type="text" name="Name" placeholder="First Name"
+                                  required="">
+                          </div>
+                          <div class="form-group">
+                              <input class="form-control" type="text" name="Name" placeholder="Last Name"
+                                  required="">
+                          </div>
+                      </div>
+                      <div class="col-lg-6">
+                          <div class="form-group">
+                              <input class="form-control" type="text" name="Name" placeholder="Mobile Number"
+                                  required="">
+                          </div>
+                          <div class="form-group">
+                              <textarea class="form-control" name="Name" placeholder="Your Message" required=""></textarea>
+                          </div>
+                      </div>
+                  </div> -->                                            
+               <!-- </form> -->
+               <!-- //form -->
+            </div>
+         </div>
       </div>
-    </div>
-
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <!-- <li data-target="#myCarousel" data-slide-to="3"></li> -->
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img class="second-slide" src="images/slider-bg-2.jpg" alt="Second slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <div class="col-md-8">
-                <h2>Coding is essential for the future</h2>
-                <hr/>
-                <p>Less than 5% of schools taught mathematics during the Industrial Revolution. Widespread unemployment followed until schools added Mathematics to the curriculum.
-                </p>
-                <p>Today, in the computer age, less than 1% of schools teach coding in early childhood resulting in a major gap in the requirements of the new world and our children’s skills.
-                </p>
-                <p>In 2020, AI and Robotics will touch 800 Million jobs. Outclass Academy prepares kids in the age group of 8-14 for this new world</p>
-              </div>
-              <div class="col-md-4">
-                <div class="carousel-image">
-                  <img src="images/carousel/codingImage_small2.png" alt="Second Slide Image" />
-                </div>
-              </div>
+      <!-- //banner -->
+      <!-- banner bottom -->
+      <section class="w3ls-bnrbtm py-5" id="about">
+         <div class="container py-xl-5 py-lg-3">
+            <h3 class="title-w3 mb-md-5 mb-sm-4 mb-2 text-center font-weight-bold">About Us</h3>
+            <div class="row">
+               <div class="col-lg-6 text-center">
+                  <img src="images/about.jpg" alt="about" class="img-fluid mt-4" />
+               </div>
+               <div class="col-lg-6 pr-xl-5 mt-4">
+                  <h3 class="title-sub mb-4">Coding is essential for the future </h3>
+                  <p class="sub-para">Today, in the computer age, less than 1% of schools teach coding in early childhood resulting in a major gap in the requirements of the new world and our children’s skills.
+                  </p>
+                  <p class="sub-para pt-4 mt-4 border-top">In 2020, AI and Robotics will touch 800 Million jobs. Outclass Academy prepares kids in the age group of 8-14 for this new world.</p>
+               </div>
             </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="first-slide" src="images/slider-bg-2.jpg" alt="First slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <div class="col-md-8">
-                <h2>Make kids creative, smart and confident</h2>
-                <hr/>                
-                <p><strong>Creation vs Consumption: </strong>Your kids use code to build their own games, animation and apps, fundamentally changing their relationship to technology to being a creator rather than a consumer</p>
-                <p><strong>Math performance improvement: </strong>Your kids learn commands, loops, sequences and conditions which strengthen their logic and technical skills resulting in not only an improvement in scores  but also creates the foundation of higher order mathematics 
-                </p>
-                <p><strong>Transformed abstract thinking</strong>Your kids learn decomposition, abstraction, pattern recognition and algorithmic thinking to solve problems logically resulting in significant improvement in abstract thinking scores which is a necessity for scoring top of charts in Math Olympiads and major tests like SAT, JEE, GMAT, CAT etc</p>                           
-                <p><strong>Strength and confidence</strong>Being able to code will help kids stand out in their peer group (until coding becomes as common as Math- which is our vision) and become more confident and generate self-belief to persevere and attain positive outcomes
-                </p>
-              </div>
-              <div class="col-md-4">
-                <div class="carousel-image">
-                  <img src="images/carousel/codingImage1_small.png" alt="First Slide Image" />
-                </div>
-              </div>
+         </div>
+      </section>
+      <!-- //banner bottom -->
+      <!-- services -->
+      <div class="services py-5" id="what">
+         <div class="container py-xl-5 py-lg-3">
+            <h3 class="title-w3 mb-xl-5 mb-sm-4 mb-2 text-center text-wh font-weight-bold">What We Do?</h3>
+            <div class="row w3pvtits-services-row text-center">
+               <div class="col-lg-4 serv-w3mk mt-5">
+                  <div class="w3pvtits-services-grids">
+                     <span class="fa fa-leanpub ser-icon" aria-hidden="true"></span>
+                     <h4 class="text-bl my-4">1-1 Classes</h4>
+                     <p class="text-left">Our expert teachers will provide private online classes for your child.<br/><br/><br/></p>
+                     <a class="service-btn mt-xl-5 mt-4 btn" href="#">Watch Video<span class="fa fa-long-arrow-right ml-2"></span></a>
+                  </div>
+               </div>
+               <div class="col-lg-4 serv-w3mk mt-5">
+                  <div class="w3pvtits-services-grids">
+                     <span class="fa fa-graduation-cap ser-icon" aria-hidden="true"></span>
+                     <h4 class="text-bl my-4">School Collaboration Programs </h4>
+                     <p class="text-left">We provide classes integrated into the School Curriculam. Is your child's school onboarded onto OutclassAcademy yet?</p>
+                     <a class="service-btn mt-xl-5 mt-4 btn" href="#">List of Schools (Coming Soon)<span class="fa fa-long-arrow-right ml-2"></span></a>
+                  </div>
+               </div>
+               <div class="col-lg-4 serv-w3mk mt-5">
+                  <div class="w3pvtits-services-grids">
+                     <span class="fa fa-users ser-icon" aria-hidden="true"></span>
+                     <h4 class="text-bl my-4">Expert Teachers</h4>
+                     <p class="text-left">Our pool of teachers and mentors are from the tier-1 colleges and Industry professionals working for Google, Microsoft, Amazon, Facebook, etc.</p>
+                     <a class="service-btn mt-xl-5 mt-4 btn" href="#">List of Teachers (Coming Soon)<span class="fa fa-long-arrow-right ml-2"></span></a>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="first-slide" src="images/slider-bg-2.jpg" alt="First slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <div class="col-md-8">
-                <h2>Merits of early instruction in coding</h2>
-                <hr/>
-                <p>Develop strong foundations in computational thinking which has applications beyond just software on the back of stronger neural connections in the brain forged at an young age
-                </p>
-                <p>Learning interventions yield diminishing returns with age based on the work of Harvard psychologist William James
-                </p>
-                <p>The focus in grades 9-12 shifts to Board exams and entrance exams inhibiting unconstrained learning of computer programming which is possible in early years
-                </p>
-              </div>
-              <div class="col-md-4">
-                <div class="carousel-image">
-                  <img src="images/carousel/codingImage3_small.png" alt="First Slide Image" />
-                </div>
-              </div>
+         </div>
+      </div>
+      <!-- //services -->
+      <!-- courses -->
+      <section class="branches py-5" id="courses">
+         <div class="container py-xl-5 py-lg-3">
+            <h3 class="title-w3 mb-5 text-center font-weight-bold">Popular Courses</h3>
+            <div class="row branches-position pt-lg-4">
+               <div class="col-lg-3 col-sm-6 place-w3">
+                  <!-- branch-img -->
+                  <div class="team-img team-img-4">
+                     <div class="team-content">
+                        <h4 class="text-wh">Fun with thinking <br/>(Class 1-4)</h4>
+                        <p class="team-meta">Kids build their thinking skills through block based codes and gamified puzzles which pushes them to think logically and serves as an exercise for the brain
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <!-- / branch-img -->
+               <div class="col-lg-3 col-sm-6 place-w3 mt-sm-0 mt-4">
+                  <!-- team-img -->
+                  <div class="team-img team-img-2">
+                     <div class="team-content">
+                        <h4 class="text-wh">Code ++ <br/>(Class 5-8)
+                        </h4>
+                        <p class="team-meta">While building the foundational thinking skills, kids start to create objects of programming like animations, games, website, apps etc. with increasing complexity level  
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <!-- /.branch-img -->
+               <div class="col-lg-3 col-sm-6 place-w3 mt-lg-0 mt-4">
+                  <!-- team-img -->
+                  <div class="team-img team-img-1">
+                     <div class="team-content">
+                        <h4 class="text-wh">Math + Code <br/>(Class 1-8)
+                        </h4>
+                        <p class="team-meta">Blends mathematics with coding to create superior mathematical and computational thinking skills oriented not just towards the immediate exams to create strong foundations in mathematics.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-sm-6 place-w3 mt-lg-0 mt-4">
+                  <!-- team-img -->
+                  <div class="team-img team-img-3">
+                     <div class="team-content">
+                        <h4 class="text-wh">Transformed abstract thinking <br/>(Class 1-8)
+                        </h4>
+                        <p class="team-meta">Your kids learn decomposition, abstraction, pattern recognition and algorithmic thinking to solve problems logically resulting in significant improvement in abstract thinking scores</p>
+                     </div>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
-        <!-- <div class="item">
-          <img class="third-slide" src="images/slider-bg-2.jpg" alt="Third slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <div class="col-md-8">
-                <h2>Our Eductation Advisors</h2>
-                <hr/>
-                <p><strong>Ravi Madlani</strong>- Strategist at Palantir Technologies and B. Tech (Computer Engineering) from Imperial College London </p>
-                <p><strong>Adarsh Kanodia</strong>- Software Engineer at Microsoft Redmond (USA) and B. Tech (Computer Science) from NTU Singapore</p>
-                <p><strong>Unnat Jain</strong>- Siebel Scholar University of Illinois Urbana Champaign, Advisor to Facebook and IIT Kanpur alum</p>
-                <p><strong>Suyash Lakhotia</strong>- Software Engineer at Google Singapore and B. Tech (Computer Science) from NTU Singapore</p>
-              </div>
-              <div class="col-md-4">
-                <div class="carousel-image">
-                  <img src="images/carousel/OurEductationAdvisor_small.png" alt="Third Slide Image" />
-                </div>
-              </div>
+         </div>
+      </section>
+      <!-- //places -->
+      <!-- stats section -->
+      <div class="middlesection-w3pvt py-sm-5 pt-sm-0 pt-5 mt-5" id="stats">
+         <div class="container py-xl-5 py-lg-3">
+            <div class="offset-lg-4 offset-sm-3 left-build-wthree aboutright-w3pvtwthree">
+               <h3 class="title-w3-2 title-w3 mb-md-5 mb-4 font-weight-bold">Our Statistics</h3>
+               <div class="row">
+                  <div class="col-4 w3layouts_stats_left w3_counter_grid">
+                     <h4 class="counter">20+</h4>
+                     <p class="para-text-w3ls text-li let">Total Teachers</p>
+                  </div>
+                  <div class="col-4 w3layouts_stats_left w3_counter_grid2">
+                     <h4 class="counter">12</h4>
+                     <p class="para-text-w3ls text-li let">Class Rooms</p>
+                  </div>
+                  <div class="col-4 w3layouts_stats_left w3_counter_grid1">
+                     <h4 class="counter">1</h4>
+                     <p class="para-text-w3ls text-li let">School Collaborations</p>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
-      </div> -->
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
+         </div>
+         <div class="property-paper">
+            <img src="images/img3.png" alt="" class="img-fluid agents-w3" />
+         </div>
+      </div>
+      <!-- //stats section -->
+      <!-- gallery -->
+      <div class="gallery-cont text-center pb-5" id="gallery">
+         <div class="container py-xl-5 py-lg-3">
+            <h3 class="title-w3 mb-sm-5 mb-4 text-center text-bl font-weight-bold">Our Gallery</h3>
+            <div class="row news-grids text-center no-gutters">
+               <div class="col-md-4 gal-img">
+                  <a href="#gal1"><img src="images/OA1.png" alt="Gallery Image" class="img-fluid"></a>
+               </div>
+               <div class="col-md-4 gal-img">
+                  <a href="#gal2"><img src="images/OA2.png" alt="Gallery Image" class="img-fluid"></a>
+               </div>
+               <div class="col-md-4 gal-img">
+                  <a href="#gal3"><img src="images/OA3.png" alt="Gallery Image" class="img-fluid"></a>
+               </div>
+            </div>
+            <div class="row news-grids text-center no-gutters">
+               <div class="col-md-4 gal-img">
+                  <a href="#gal4"><img src="images/OA4.png" alt="Gallery Image" class="img-fluid"></a>
+               </div>
+               <div class="col-md-4 gal-img">
+                  <a href="#gal5"><img src="images/OA5.png" alt="Gallery Image" class="img-fluid"></a>
+               </div>
+               <div class="col-md-4 gal-img">
+                  <a href="#gal6"><img src="images/OA6.png" alt="Gallery Image" class="img-fluid"></a>
+               </div>
+            </div>
+            <div class="row news-grids text-center no-gutters">
+               <div class="col-md-4 gal-img">
+                  <a href="#gal7"><img src="images/OA7.png" alt="Gallery Image" class="img-fluid"></a>
+               </div>
+               <div class="col-md-4 gal-img">
+                  <a href="#gal8"><img src="images/OA8.png" alt="Gallery Image" class="img-fluid"></a>
+               </div>
+               <div class="col-md-4 gal-img">
+                  <a href="#gal9"><img src="images/OA9.png" alt="Gallery Image" class="img-fluid"></a>
+               </div>
+            </div>
+            <!-- gallery popups -->
+            <!-- popup-->
+            <div id="gal1" class="pop-overlay animate">
+               <div class="popup">
+                  <img src="images/OA1.png" alt="Popup Image" class="img-fluid" />
+                  <p class="mt-4">Students working with a teacher to come up with an algorithm to enable the Monkey to get all the Banana's!
+                  </p>
+                  <a class="close" href="#gallery">&times;</a>
+               </div>
+            </div>
+            <!-- //popup -->
+            <!-- popup-->
+            <div id="gal2" class="pop-overlay animate">
+               <div class="popup">
+                  <img src="images/OA2.png" alt="Popup Image" class="img-fluid" />
+                  <p class="mt-4">Exercise Completed Successfully.
+                  </p>
+                  <a class="close" href="#gallery">&times;</a>
+               </div>
+            </div>
+            <!-- //popup -->
+            <!-- popup-->
+            <div id="gal3" class="pop-overlay animate">
+               <div class="popup">
+                  <img src="images/OA3.png" alt="Popup Image" class="img-fluid" />
+                  <p class="mt-4">Student-Teacher interations :D 
+                  </p>
+                  <a class="close" href="#gallery">&times;</a>
+               </div>
+            </div>
+            <!-- //popup3 -->
+            <!-- popup-->
+            <div id="gal4" class="pop-overlay animate">
+               <div class="popup">
+                  <img src="images/OA4.png" alt="Popup Image" class="img-fluid" />
+                  <p class="mt-4">Board to scribble rough work
+                  </p>
+                  <a class="close" href="#gallery">&times;</a>
+               </div>
+            </div>
+            <!-- //popup -->
+            <!-- popup-->
+            <div id="gal5" class="pop-overlay animate">
+               <div class="popup">
+                  <img src="images/OA5.png" alt="Popup Image" class="img-fluid" />
+                  <p class="mt-4">"Homework :("
+                  </p>
+                  <a class="close" href="#gallery">&times;</a>
+               </div>
+            </div>
+            <!-- //popup -->
+            <!-- popup-->
+            <div id="gal6" class="pop-overlay animate">
+               <div class="popup">
+                  <img src="images/OA6.png" alt="Popup Image" class="img-fluid" />
+                  <p class="mt-4">Student-Teacher interations :D 
+                  </p>
+                  <a class="close" href="#gallery">&times;</a>
+               </div>
+            </div>
+            <!-- //popup -->
+            <!-- popup-->
+            <div id="gal7" class="pop-overlay animate">
+               <div class="popup">
+                  <img src="images/OA7.png" alt="Popup Image" class="img-fluid" />
+                  <p class="mt-4">Student-Teacher interations :D 
+                  </p>
+                  <a class="close" href="#gallery">&times;</a>
+               </div>
+            </div>
+            <!-- //popup -->
+            <!-- popup-->
+            <div id="gal8" class="pop-overlay animate">
+               <div class="popup">
+                  <img src="images/OA8.png" alt="Popup Image" class="img-fluid" />
+                  <p class="mt-4">Student-Teacher interations :D 
+                  </p>
+                  <a class="close" href="#gallery">&times;</a>
+               </div>
+            </div>
+            <!-- //popup -->
+            <!-- popup-->
+            <div id="gal9" class="pop-overlay animate">
+               <div class="popup">
+                  <img src="images/OA9.png" alt="Popup Image" class="img-fluid" />
+                  <p class="mt-4">Board to scribble rough work
+                  </p>
+                  <a class="close" href="#gallery">&times;</a>
+               </div>
+            </div>
+            <!-- //popup -->
+            <!-- //gallery popups -->
+         </div>
+      </div>
+      <!-- //gallery -->
+      <!-- testimonials -->
+      <section class="clients py-5" id="testi">
+         <div class="container py-xl-5 py-lg-3">
+            <h3 class="title-w3 mb-sm-5 mb-4 text-center text-wh font-weight-bold">What Students Say</h3>
+            <div class="feedback-info text-center">
+               <p>My Experience with outclassacademy has been refreshing. The teachers are very friendly and 
+                  guide us through exercises. The classes are interactive and fun, with alot of new things to learn.
+               </p>
+               <img src="images/humzaKid3.png" alt=" " class="img-fluid mt-5">
+               <h4 class="mt-4 text-wh font-weight-bold mb-4">Sunny</h4>
+            </div>
+         </div>
+      </section>
+      <!-- //testimonials -->
+      <!-- apps -->
+      <!-- <div class="apps_w3w3pvt bg-li py-5" id="apps">
+         <div class="container py-xl-5 py-lg-3">
+             <h3 class="title-w3 mb-2 text-center text-bl font-weight-bold">Download The Apps</h3>
+             <p class="text-center title-w3 mb-md-5 mb-4">Work In Progress</p>
+             <ul class="list-unstyled apps-lists text-center pt-sm-4">
+                 <li>
+                     <a href="#"><span class="fa fa-apple mr-3" aria-hidden="true"></span>App Store</a>
+                 </li>
+                 <li class="mx-sm-3 my-sm-0 my-3">
+                     <a href="#" class="active"><span class="fa fa-windows mr-3" aria-hidden="true"></span>Windows Store</a>
+                 </li>
+                 <li>
+                     <a href="#"><span class="fa fa-android mr-3" aria-hidden="true"></span>Android</a>
+                 </li>
+             </ul>
+         </div>
+         <div class="img-podi-w3ls">
+             <span class="fa fa-leanpub"></span>
+         </div>
+         </div> -->
+      <!-- //apps -->
+      <!-- contact-->
+      <!-- <section class="contact py-5" id="contact">
+         <div class="container py-xl-5 py-lg-3">
+             <h3 class="title-w3 mb-sm-5 mb-4 text-center text-wh font-weight-bold">Contact Us</h3>
+             <div class="contact_grid_right pt-4">
+                 <form action="#" method="post">
+                     <div class="row contact_left_grid">
+                         <div class="col-lg-6 con-left" data-aos="fade-up">
+                             <div class="form-group">
+                                 <input class="form-control" type="text" name="Name" placeholder="Name" required="">
+                             </div>
+                             <div class="form-group">
+                                 <input class="form-control" type="email" name="Email" placeholder="Email" required="">
+                             </div>
+                             <div class="form-group">
+                                 <input class="form-control" type="text" name="Subject" placeholder="Subject" required="">
+                             </div>
+                         </div>
+                         <div class="col-lg-6 con-right" data-aos="fade-up">
+                             <div class="form-group">
+                                 <textarea id="textarea" placeholder="Message" required=""></textarea>
+                             </div>
+                             <div class="sub-honey">
+                                 <button class="form-control btn" type="submit">Submit</button>
+                             </div>
+                         </div>
+                     </div>
+                 </form>
+             </div>
+         </div>
+         </section> -->
+      <!-- //contact -->
+      <!-- footer -->
+      <footer class="py-5">
+         <div class="container py-xl-4 py-lg-3">
+            <div class="row footer-grids">
+               <div class="col-lg-2 col-6 footer-grid">
+                  <h3 class="mb-sm-4 mb-3">Navigation</h3>
+                  <ul class="list-unstyled">
+                     <li>
+                        <a href="index.html">Index</a>
+                     </li>
+                     <li>
+                        <a href="#about">About Us</a>
+                     </li>
+                     <li>
+                        <a href="#what">What We Do?</a>
+                     </li>
+                     <li>
+                        <a href="#gallery">Our Gallery</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-lg-2 col-6 footer-grid">
+                  <h3 class="mb-sm-4 mb-3">Some More</h3>
+                  <ul class="list-unstyled">
+                     <li>
+                        <a href="https://form.jotform.me/92746372773468/">Join Now</a>
+                     </li>
+                     <!-- <li>
+                        <a href="#events">Our Events</a>
+                        </li> -->
+                     <li>
+                        <a href="#courses">Popular Courses</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-lg-2 col-6 footer-grid footer-contact mt-lg-0 mt-4">
+                  <h3 class="mb-sm-4 mb-3">Get In Touch</h3>
+                  <ul class="list-unstyled">
+                     <li>                                
+                        +91 (983) 05 30940
+                     </li>
+                     <li>
+                        <a href="mailto:outclassacademy@gmail.com">outclassacademy@gmail.com</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-lg-2 col-6 footer-grid text-lg-right">
+                  <ul class="list-unstyled">
+                     <li>
+                        <a href="#stats">Our Statistics</a>
+                     </li>
+                     <!-- <li>
+                        <a href="https://form.jotform.me/92746372773468/">Login</a>
+                        </li> -->
+                     <li>
+                        <a href="https://form.jotform.me/92746372773468/">Register</a>
+                     </li>
+                     <li>
+                        <a href="#contact">Contact Us</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-lg-4 footer-grid mt-lg-0 mt-4">
+                  <div class="footer-logo">
+                     <h2 class="text-lg-center text-center">
+                        <a class="logo text-wh font-weight-bold" href="index.html">
+                        Outclass Academy</a>
+                     </h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- //footer -->
+      <!-- copyright -->
+      <div class="copyright-w3ls py-4">
+         <div class="container">
+            <div class="row">
+               <!-- copyright -->
+               <p class="col-lg-8 copy-right-grids text-wh text-lg-left text-center mt-lg-2">© 2019 OutclassAcademy. All
+                  Rights Reserved | Design by 
+                  <a href="https://w3layouts.com/" target="_blank">W3layouts</a>
+               </p>
+               <!-- //copyright -->
+               <!-- social icons -->
+               <div class="col-lg-4 w3social-icons text-lg-right text-center mt-lg-0 mt-3">
+                  <ul>
+                     <li>
+                        <a href="https://www.facebook.com/Outclass-Academy-101801294507356/" class="rounded-circle">
+                        <span class="fa fa-facebook-f"></span>
+                        </a>
+                     </li>
+                     <li class="px-2">
+                        <a href="mailto:outclassacademy@gmail.com" class="rounded-circle">
+                        <span class="fa fa-google-plus"></span>
+                        </a>
+                     </li>
+                     <!-- <li>
+                        <a href="#" class="rounded-circle">
+                            <span class="fa fa-twitter"></span>
+                        </a>
+                        </li> -->
+                     <!-- <li class="pl-2">
+                        <a href="#" class="rounded-circle">
+                            <span class="fa fa-dribbble"></span>
+                        </a>
+                        </li> -->
+                  </ul>
+               </div>
+               <!-- //social icons -->
+            </div>
+         </div>
+      </div>
+      <!-- //copyright -->
+      <!-- move top icon -->
+      <a href="#home" class="move-top text-center">
+      <span class="fa fa-angle-double-up" aria-hidden="true"></span>
       </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div><!-- /.carousel -->
-
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-
-    <div class="callout">
-      <div class="container">
-          <div class="col-xs-14">
-            <h1><span style="color:#ea2a2e;">Outclass Academy</span> About Us</h1>
-            <hr/>
-            <p><strong>You can request a trial class by writing to outclassacademy@gmail.com </strong>The first class shall be free for all students after which the parents/kids can decide whether to opt for the paid subscription.</p>
-            <p><strong>Coding as a continuous learning activity 
-            </strong>We don’t want kids to end the course after creating some basic games and animations but inculcate coding as a life skill which shall give them an edge throughout their lives
-          <br/>While the frequency and duration of interaction may diminish over time as students become self-sufficient to learn- our learning platform and instructors shall continue to guide and counsel them to the right direction in their journey of coding (e.g. computer vision, machine learning, artificial intelligence etc.)
-        </p>
-            <p><strong>Positioned as a hobby class to create the love for coding in children
-            </strong>The first few classes focus disproportionately on puzzles and games with no written notes and homework to prevent kids from looking at coding as an additional subject not even taught at school but rather as a fun activity
-          <br/>Over time we introduce more formal learning interventions like study notes, videos, home assignments etc. to accelerate the pace of learning 
-        </p>
-            <p><strong>Based on principles of adaptive learning 
-            </strong>Rather than limiting to a standard, we want students to become conceptually strong and accelerate beyond their grades attaining greater self-confidence
-          <br/>The lesson plans shall be tailor made to each students based on the initial few classes which shall continue to iterate based on subsequent learning journey
-        </p>
-            <p><strong>Use of psychological learning techniques with empirically proven results
-            </strong>Our course delivery by the instructor and self-learning content shall be based on scientific learning techniques like retrieval based learning and interleaving
-          </p>
-          </div>
-      </div>
-    </div>
-
-    <div class="container marketing">
-
-     <!-- START THE FEATURETTES -->
-
-    <div class="col-sm-12">
-
-
-      <div class="row featurette">
-        <div class="col-sm-4">
-          <img class="featurette-image img-responsive center-block" src="images/front-icons/big-data.png" alt="Generic placeholder image 1">
-        </div>
-        <div class="col-sm-8">
-          <h2 class="featurette-heading"><a class="nostyle" name="big-data">Coding is essential for the future</a></h2>          
-          <p class="lead">Kids learn fundamentals of coding--logic, structure, sequence and algorithmic thinking--to generate creative outcomes, for example: animations and Apps which transforms over time to more serious computer programming education once the kids are in love with computational thinking.</p>          
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-sm-4">
-          <img class="featurette-image img-responsive center-block" src="images/front-icons/build-delivery.png" alt="Generic placeholder image 1">
-        </div>
-        <div class="col-sm-8">
-          <h2 class="featurette-heading"><a class="nostyle" name="build-and-delivery-tools">Class Format</a></h2>
-          <p class="lead">All classes are taught live online 1:1 in the comfort of your home by professional coders who are building websites and apps while the kids are in school
-          </p>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-sm-4">
-          <img class="featurette-image img-responsive center-block" src="images/front-icons/cloud-platform.png" alt="Generic placeholder image 1">
-        </div>
-        <div class="col-sm-8">
-          <h2 class="featurette-heading"><a class="nostyle" name="common-runtime">What is computational thinking?</a></h2>
-          <p class="lead">Computational thinking is how software engineers solve problems. It combines mathematics, logic and algorithms, and teaches you a new way to think about the world.</p>
-          <p class="lead">Computational thinking teaches you how to tackle large problems by breaking them down into a sequence of smaller, more manageable problems. It allows you to tackle complex problems in efficient ways that operate at huge scale. It involves creating models of the real world with a suitable level of abstraction, and focus on the most pertinent aspects. It helps you go from specific solutions to general ones.
-          </p>
-          <p class="lead">The applications of this approach stretch beyond writing software. Fields as diverse as mechanical engineering, fluid mechanics, physics, biology, archeology and music are applying the computational approach. In business we are beginning to understand that markets often follow rules that can be discerned using computational analysis.
-          </p>
-          <p class="lead">Computational thinking is a skill that everyone should learn. Even if you never become a professional software engineer, you will benefit from knowing how to think this way. It will help you understand and master technology of all sorts and solve problems in almost any discipline.
-          </p>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-sm-4">
-          <img class="featurette-image img-responsive center-block" src="images/front-icons/content-engineering.png" alt="Generic placeholder image 1">
-        </div>
-        <div class="col-sm-8">
-          <h2 class="featurette-heading"><a class="nostyle" name="content-encoding">Different learning paths at Outclass</a></h2>
-          <p class="lead"><strong>Fun with thinking (Class 1-4)
-          </strong>Kids build their thinking skills through block based codes and gamified puzzles which pushes them to think logically and serves as an exercise for the brain
-        </p>
-          <p class="lead"><strong>Code ++ (Class 5-8)
-          </strong>While building the foundational thinking skills, kids start to create objects of programming like animations, games, website, apps etc. with increasing complexity level  
-        </p>
-          <p class="lead"><strong>Math + Code (Class 1-8)
-          </strong>Blends mathematics with coding to create superior mathematical and computational thinking skills oriented not just towards the immediate exams to create strong foundations in Math for higher grades, Olympiads and competitive tests (e.g. JEE, SAT, CAT, GMAT etc.) and elementary programming skills to pick up different languages
-        </p>
-        </div>
-      </div>     
-
-    </div>
-    <!-- /END THE FEATURETTES -->
-
-     <!-- START SIDEBAR -->
-
-      <!--
-     <div class="col-sm-4 sidebar">
-
-     <a class="twitter-timeline" href="https://twitter.com/NetflixOSS" data-theme="dark" data-widget-id="586596093502205952">Tweets by @NetflixOSS</a>
-     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-     <p class="sidebar-sub"><strong>Open Source</strong></p>
-     <ul class="sidebar-list">
-       <li><a href="http://netflix.github.io/" target="_blank">NETFLIX OPEN SOURCE</a></li>
-       <li><a href="http://netflix.github.io/" target="_blank">NETFLIX GITHUB</a></li>
-       <li><a href="https://jobs.netflix.com/" target="_blank">GET IN ON THE FUN: JOIN US!</a></li>
-     </ul>
-
-     <p class="sidebar-sub"><strong>Stay in Touch</strong></p>
-     <ul>
-       <li><a href="http://techblog.netflix.com/" target="_blank">OUR TECH BLOG</a></li>
-       <li><a href="https://twitter.com/NetflixOSS" target="_blank">@NetflixOSS</a></li>
-       <li><a href="http://www.slideshare.net/netflix" target="_blank">SLIDESHARE</a></li>
-       <li><a href="http://www.meetup.com/Netflix-Open-Source-Platform/" target="_blank">NETFLIX MEETUP</a></li>
-     </ul>
-
-     </div>
-           -->
-
-     <!-- /END SIDEBAR -->
-
-
-    </div><!-- /.container -->
-
-    <!-- FOOTER -->
-
-    <footer>
-      <div class="footer">
-        <div class="container">          
-          <div class="col-md-4">
-            <p class="footer-sub"><strong>Stay in Touch</strong></p>
-            <ul>
-              <li><a href="https://www.facebook.com/Outclass-Academy-101801294507356/" target="_blank">Facebook</a></li>
-              <li><a href="outclassacademy@gmail.com" target="_blank">EmailId</a></li>
-            </ul>
-          </div>
-          <div class="powered-by-copyright col-md-4">          
-          <p style="clear:both;">&copy; 2019 Outclass Academy, INC. ALL RIGHTS RESERVED</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
-  </body>
+      <!-- //move top icon -->
+   </body>
 </html>
